@@ -1,60 +1,60 @@
-<%-- any content can be specified here e.g.: --%>
+
 <%@ page pageEncoding="UTF-8" %>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Raleway:300,300,700" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="./css/normalize.css">
 <link rel="stylesheet" href="./css/skeleton.css">
-<title>Shoes on Sale</title>
+<title>Shoe Sale</title>
 <%@page import="java.util.ArrayList"%>
 <%@page import="gg.Party"%>
-<%@page import="gg.Shoes"%>
+<%@page import="gg.ShoeSale"%>
 <%
 
     ArrayList<Party> parties = new ArrayList<Party>();
 
     Party nike = new Party("NIKE");
-    nike.addClaim("Men's Flex Experience");
-    nike.addClaim("Men's Son of Force");
+    nike.addClaim("NIKE - Style#53928");
+    nike.addClaim("NIKE - Style#53571");
 
-    Party bethesda = new Party("Bethesda");
-    bethesda.addClaim("Skyrim");
-    bethesda.addClaim("Fallout 4");
+    Party van = new Party("VAN");
+    van.addClaim("VAN - Style#39958");
+    van.addClaim("VAN - Style#53016");
 
-    Party lucasArts = new Party("LucasArts");
-    lucasArts.addClaim("Dark Forces");
-    lucasArts.addClaim("Jedi Outcast");
+    Party converse = new Party("CONVERSE");
+    converse.addClaim("CONVERSE - Style#54262");
+    converse.addClaim("CONVERSE _ Style#54263");
 
-    Party valve = new Party("Valve");
-    valve.addClaim("Left 4 Dead");
-    valve.addClaim("Portal 2");
-    valve.addClaim("Half-Life 2");
+    Party Tom = new Party("TOMMY HILFIGER");
+    Tom.addClaim("TOMMY HILFIGER - Style#56170");
+    Tom.addClaim("TOMMY HILFIGER - Style#54023");
+    Tom.addClaim("TOMMY HILFIGER - Style#54024");
 
     parties.add(nike);
-    parties.add(bethesda);
-    parties.add(lucasArts);
-    parties.add(valve);
+    parties.add(van);
+    parties.add(converse);
+    parties.add(Tom);
 
-    ArrayList<Shoes> shoes = new ArrayList<Shoes>();
+    ArrayList<ShoeSale> shoes = new ArrayList<ShoeSale>();
 
-    Shoes nike1 = new Shoes("Men's Flex Experience", nike, "nike1.jpg");
-    Shoes nike2 = new Shoes("Men's Son of Force", nike, "nike2.jpg");
-    Shoes fallout4 = new Shoes("Fallout 4", bethesda, "fallout4.jpg");
-    Shoes skyrim = new Shoes("Skyrim", bethesda, "skyrim.jpg");
-    Shoes darkforces = new Shoes("Dark Forces", lucasArts, "darkforces.jpg");
-    Shoes outcast = new Shoes("Jedi Outcast", lucasArts, "starwars.jpg");
-    Shoes left4dead = new Shoes("Left 4 Dead", valve, "left4dead.jpg");
-    Shoes portal2 = new Shoes("Portal 2", valve, "portal2.jpg");
-    Shoes halflife2 = new Shoes("Half-Life 2", valve, "halflife2.jpg");
+    ShoeSale nike1 = new ShoeSale("NIKE - Style#53928", nike, "nike53928.jpg");
+    ShoeSale nike2 = new ShoeSale("NIKE - Style#53571", nike, "nike53571.jpg");
+    ShoeSale van1 = new ShoeSale("VAN - Style#39958", van, "van39958.jpg");
+    ShoeSale van2 = new ShoeSale("VAN -Style#53016", van, "van53016.jpg");
+    ShoeSale con1 = new ShoeSale("CONVERSE - Style#54262", converse, "con54262.jpg");
+    ShoeSale con2 = new ShoeSale("CONVERSE - Style#54263", converse, "con54263.jpg");
+    ShoeSale tom1 = new ShoeSale("TOMMY HILFIGER - Style#56170", Tom, "tom56170.jpg");
+    ShoeSale tom2 = new ShoeSale("TOMMY HILFIGER - Style#54023", Tom, "tom54023.jpg");
+    ShoeSale tom3 = new ShoeSale("TOMMY HILFIGER - Style#54024", Tom, "tom54024.jpg");
 
     shoes.add(nike1);
     shoes.add(nike2);
-    shoes.add(fallout4);
-    shoes.add(skyrim);
-    shoes.add(darkforces);
-    shoes.add(outcast);
-    shoes.add(left4dead);
-    shoes.add(portal2);
-    shoes.add(halflife2);
+    shoes.add(van1);
+    shoes.add(van2);
+    shoes.add(con1);
+    shoes.add(con2);
+    shoes.add(tom1);
+    shoes.add(tom2);
+    shoes.add(tom3);
 
         System.out.println("Verifying integrity of publisher claims...");
 
