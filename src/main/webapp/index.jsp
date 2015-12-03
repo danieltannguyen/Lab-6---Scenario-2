@@ -34,7 +34,7 @@
                         Shoes shoe = shoes.get(randomShoes.get(i));
                         %>
                         <div class="three columns">
-                            <img height="100px" src="./images/covers/<%= game.cover %>" />
+                            <img height="100px" src="./images/covers/<%= shoe.cover %>" />
                             <h6><%= shoe.name %></h6>
                             <a class="button" href="./shoe.jsp?shoe=<%= shoe.name %>&publisher=<%= shoe.publishingParty.name %>">View</a>
                         </div>

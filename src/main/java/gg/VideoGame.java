@@ -1,11 +1,11 @@
 
 package gg;
 
-public class Shoes {
+public class VideoGame {
 	public String name;
 	public Party publishingParty;
         public String cover;
-	public Shoes(String name, Party publishingParty, String cover){
+	public VideoGame(String name, Party publishingParty, String cover){
 		this.name = name;
 		this.publishingParty = publishingParty;
                 this.cover = cover;
