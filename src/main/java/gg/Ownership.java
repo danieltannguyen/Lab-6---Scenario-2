@@ -1,4 +1,5 @@
 
+package gg;
 
 import java.util.List;
 
@@ -6,31 +7,31 @@ public class Ownership {
 	boolean isOwner = false;
         String domain;
         String name;
-
-        private Party party;
+  
+        private Party party; 
         private Context context;
-
+        
         public void doneBy(Party party)
-        {
-            this.setParty(party);
-        }
+        {  
+            this.setParty(party); 
+        }   
         public String getDomain() {
-            return domain;
+            return domain; 
         }  public void setDomain(String domain)
-        {
-            this.domain = domain;
-        }  public String getName()
-        {
+        {  
+            this.domain = domain; 
+        }  public String getName() 
+        {   
             return name;
         }  public void setName(String name)
-        {
-            this.name = name;
+        {  
+            this.name = name; 
         }
         public Context getContext()
-        {
-            return context;
+        {   
+            return context; 
         }
-        public void setContext(Context context)
+        public void setContext(Context context) 
         {
             this.context = context;
         }
@@ -38,7 +39,7 @@ public class Ownership {
         {
             return party;
         }
-        public void setParty(Party party)
+        public void setParty(Party party) 
         {
             this.party = party;
         }

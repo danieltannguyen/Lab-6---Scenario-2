@@ -1,4 +1,6 @@
 
+package gg;
+
 public class Claim {
 	String name;
 	boolean isValidClaim;

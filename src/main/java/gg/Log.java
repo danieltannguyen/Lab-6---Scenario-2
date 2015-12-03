@@ -1,4 +1,5 @@
 
+package gg;
 
 public class Log {
 	String isValidClaim;
@@ -7,7 +8,7 @@ public class Log {
 		this.isValidClaim = " ";
 		this.media = new Media();
 	}
-
+	
 	public void saveToLog(){
 		isValidClaim = "Claim To Property is Valid";
 		media.saveToFile();

@@ -1,0 +1,75 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/skeleton.css">
+<title>GoodGame</title>
+<%@page import="java.utVideoGame"%>
+<%
+
+    ArrayList<Party> parties = new ArrayList<Party>();
+
+    Party eaGames = new Party("EA Games");
+    eaGames.addClaim("Battlefield 3");
+    eaGames.addClaim("Sims 2");
+
+    Party bethesda = new Party("Bethesda");
+    bethesda.addClaim("Skyrim");
+    bethesda.addClaim("Fallout 4");
+
+    Party lucasArts = new Party("LucasArts");
+    lucasArts.addClaim("Dark Forces");
+    lucasArts.addClaim("Jedi Outcast");
+
+    Party valve = new Party("Valve");
+    valve.addClaim("Left 4 Dead");
+    valve.addClaim("Portal 2");
+    valve.addClaim("Half-Life 2");
+
+    parties.add(eaGames);
+    parties.add(bethesda);
+    parties.add(lucasArts);
+    parties.add(valve);
+
+    ArrayList<VideoGame> games = new ArrayList<VideoGame>();
+
+    VideoGame battlefield3 = new VideoGame("Battlefield 3", eaGames, "battlefield.jpg");
+    VideoGame sims2 = new VideoGame("Sims 2", eaGames, "sims2.jpg");
+    VideoGame fallout4 = new VideoGame("Fallout 4", bethesda, "fallout4.jpg");
+    VideoGame skyrim = new VideoGame("Skyrim", bethesda, "skyrim.jpg");
+    VideoGame darkforces = new VideoGame("Dark Forces", lucasArts, "darkforces.jpg");
+    VideoGame outcast = new VideoGame("Jedi Outcast", lucasArts, "starwars.jpg");
+    VideoGame left4dead = new VideoGame("Left 4 Dead", valve, "left4dead.jpg");
+    VideoGame portal2 = new VideoGame("Portal 2", valve, "portal2.jpg");
+    VideoGame halflife2 = new VideoGame("Half-Life 2", valve, "halflife2.jpg");
+
+    games.add(battlefield3);
+    games.add(sims2);
+    games.add(fallout4);
+    games.add(skyrim);
+    games.add(darkforces);
+    games.add(outcast);
+    games.add(left4dead);
+    games.add(portal2);
+    games.add(halflife2);
+
+        System.out.println("Verifying integrity of publisher claims...");
+
+        for (int i = 0; i < games.size(); i++){
+                String title = games.get(i).name;
+                String party = games.get(i).publishingParty.name;
+
+                System.out.println(title + ", " + party);
+
+                for (int k = 0; k < parties.size(); k++){
+                        if (parties.get(k).name.equalsIgnoreCase(party)){
+                                boolean isValid = parties.get(k).checkClaim(title);
+                                System.out.println(isValid + "\n" + "----");
+                        }
+                }
+        }
+
+%>il.ArrayList"%>
+<%@page import="gg.Party"%>
+<%@page import="gg.

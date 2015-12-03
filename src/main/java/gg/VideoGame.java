@@ -1,4 +1,5 @@
 
+package gg;
 
 public class VideoGame {
 	public String name;
@@ -9,5 +10,5 @@ public class VideoGame {
 		this.publishingParty = publishingParty;
                 this.cover = cover;
 	}
-
+	
 }
