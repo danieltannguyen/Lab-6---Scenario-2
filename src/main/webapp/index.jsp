@@ -15,32 +15,32 @@
     <body>
         <div class="container">
             <br />
-            <h1><a class="brand" href="./"><img src="./images/logo.png" /> GoodGame!</a></h1>
-            <p>Online Game Shopping Database.</p>
+            <h1><a class="brand" href="./"><img src="./images/logo.png" /> Shoes in Flash Sale!</a></h1>
+            <p>Online Shoe Shopping Database.</p>
             <form action="./search.jsp" method="POST">
                 <label for="searchInput">Search</label>
                 <input class="u-full-width" type="text" placeholder="Fallout 4, The Sims 3 ..." name="searchInput" id="searchInput">
                 <input class="button-primary" type="submit" value="Go!">
             </form>
             <hr />
-            <h4>Random Games</h4>
+            <h4>Random Shoes</h4>
             <div class="row">
                 <%
                     Random random = new Random();
-                    ArrayList<Integer> randomGames = new ArrayList<Integer>();
+                    ArrayList<Integer> randomShoes = new ArrayList<Integer>();
                     for (int i = 0; i < 4; i++) {
                         while (true) {
-                            int rand = random.nextInt(games.size());
-                            if (randomGames.contains(rand)) continue;
-                            randomGames.add(rand);
+                            int rand = random.nextInt(shoes.size());
+                            if (randomShoes.contains(rand)) continue;
+                            randomShoes.add(rand);
                             break;
                         }
-                        VideoGame game = games.get(randomGames.get(i));
+                        Shoes shoe = shoes.get(randomShoes.get(i));
                         %>
                         <div class="three columns">
                             <img height="100px" src="./images/covers/<%= game.cover %>" />
-                            <h6><%= game.name %></h6>
-                            <a class="button" href="./game.jsp?game=<%= game.name %>&publisher=<%= game.publishingParty.name %>">View</a>
+                            <h6><%= shoe.name %></h6>
+                            <a class="button" href="./game.jsp?game=<%= shoe.name %>&publisher=<%= shoe.publishingParty.name %>">View</a>
                         </div>
                         <%
                     }

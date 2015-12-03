@@ -4,15 +4,17 @@
 <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="./css/normalize.css">
 <link rel="stylesheet" href="./css/skeleton.css">
-<title>GoodGame</title>
-<%@page import="java.utVideoGame"%>
+<title>Shoes on Sale</title>
+<%@page import="java.util.ArrayList"%>
+<%@page import="gg.Party"%>
+<%@page import="gg.Shoes"%>
 <%
 
     ArrayList<Party> parties = new ArrayList<Party>();
 
-    Party eaGames = new Party("EA Games");
-    eaGames.addClaim("Battlefield 3");
-    eaGames.addClaim("Sims 2");
+    Party nike = new Party("NIKE");
+    nike.addClaim("Battlefield 3");
+    nike.addClaim("Sims 2");
 
     Party bethesda = new Party("Bethesda");
     bethesda.addClaim("Skyrim");
@@ -27,38 +29,38 @@
     valve.addClaim("Portal 2");
     valve.addClaim("Half-Life 2");
 
-    parties.add(eaGames);
+    parties.add(nike);
     parties.add(bethesda);
     parties.add(lucasArts);
     parties.add(valve);
 
-    ArrayList<VideoGame> games = new ArrayList<VideoGame>();
+    ArrayList<Shoes> shoes = new ArrayList<Shoes>();
 
-    VideoGame battlefield3 = new VideoGame("Battlefield 3", eaGames, "battlefield.jpg");
-    VideoGame sims2 = new VideoGame("Sims 2", eaGames, "sims2.jpg");
-    VideoGame fallout4 = new VideoGame("Fallout 4", bethesda, "fallout4.jpg");
-    VideoGame skyrim = new VideoGame("Skyrim", bethesda, "skyrim.jpg");
-    VideoGame darkforces = new VideoGame("Dark Forces", lucasArts, "darkforces.jpg");
-    VideoGame outcast = new VideoGame("Jedi Outcast", lucasArts, "starwars.jpg");
-    VideoGame left4dead = new VideoGame("Left 4 Dead", valve, "left4dead.jpg");
-    VideoGame portal2 = new VideoGame("Portal 2", valve, "portal2.jpg");
-    VideoGame halflife2 = new VideoGame("Half-Life 2", valve, "halflife2.jpg");
+    Shoes battlefield3 = new Shoes("Battlefield 3", nike, "battlefield.jpg");
+    Shoes sims2 = new Shoes("Sims 2", nike, "sims2.jpg");
+    Shoes fallout4 = new Shoes("Fallout 4", bethesda, "fallout4.jpg");
+    Shoes skyrim = new Shoes("Skyrim", bethesda, "skyrim.jpg");
+    Shoes darkforces = new Shoes("Dark Forces", lucasArts, "darkforces.jpg");
+    Shoes outcast = new Shoes("Jedi Outcast", lucasArts, "starwars.jpg");
+    Shoes left4dead = new Shoes("Left 4 Dead", valve, "left4dead.jpg");
+    Shoes portal2 = new Shoes("Portal 2", valve, "portal2.jpg");
+    Shoes halflife2 = new Shoes("Half-Life 2", valve, "halflife2.jpg");
 
-    games.add(battlefield3);
-    games.add(sims2);
-    games.add(fallout4);
-    games.add(skyrim);
-    games.add(darkforces);
-    games.add(outcast);
-    games.add(left4dead);
-    games.add(portal2);
-    games.add(halflife2);
+    shoes.add(battlefield3);
+    shoes.add(sims2);
+    shoes.add(fallout4);
+    shoes.add(skyrim);
+    shoes.add(darkforces);
+    shoes.add(outcast);
+    shoes.add(left4dead);
+    shoes.add(portal2);
+    shoes.add(halflife2);
 
         System.out.println("Verifying integrity of publisher claims...");
 
-        for (int i = 0; i < games.size(); i++){
-                String title = games.get(i).name;
-                String party = games.get(i).publishingParty.name;
+        for (int i = 0; i < shoes.size(); i++){
+                String title = shoes.get(i).name;
+                String party = shoes.get(i).publishingParty.name;
 
                 System.out.println(title + ", " + party);
 
@@ -70,6 +72,4 @@
                 }
         }
 
-%>il.ArrayList"%>
-<%@page import="gg.Party"%>
-<%@page import="gg.
+%>
