@@ -1,13 +1,9 @@
-<%-- 
-    Document   : test
-    Created on : Nov 30, 2015, 3:55:08 PM
-    Author     : hen
---%>
 
 <%@page import="java.util.Random"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+    
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <%@include file="header.jspf" %>
@@ -40,7 +36,7 @@
                         <div class="three columns">
                             <img height="100px" src="./images/covers/<%= game.cover %>" />
                             <h6><%= shoe.name %></h6>
-                            <a class="button" href="./game.jsp?game=<%= shoe.name %>&publisher=<%= shoe.publishingParty.name %>">View</a>
+                            <a class="button" href="./shoe.jsp?shoe=<%= shoe.name %>&publisher=<%= shoe.publishingParty.name %>">View</a>
                         </div>
                         <%
                     }

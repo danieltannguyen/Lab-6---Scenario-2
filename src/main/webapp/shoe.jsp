@@ -1,8 +1,3 @@
-<%-- 
-    Document   : search
-    Created on : Dec 1, 2015, 3:31:29 PM
-    Author     : hen
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -17,12 +12,12 @@
             <h1><a class="brand" href="./"><img src="./images/logo.png" /> Shoes in Flash Sale!</a></h1>
             <hr />
             <%
-                String gameName = request.getParameter("game");
+                String shoeName = request.getParameter("shoe");
                 String publisherName = request.getParameter("publisher");
             
                 for (Shoes shoe : shoes) {
                     if (shoe.publishingParty.name.equals(publisherName)
-                            && shoe.name.equals(gameName)
+                            && shoe.name.equals(shoeName)
                     ) {
                         %>
                         <div class="row">

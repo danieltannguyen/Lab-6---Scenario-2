@@ -1,8 +1,4 @@
-<%-- 
-    Document   : search
-    Created on : Dec 1, 2015, 3:31:29 PM
-    Author     : hen
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
