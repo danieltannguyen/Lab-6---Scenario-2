@@ -15,7 +15,7 @@
             <p>Online Shoe Shopping Database.</p>
             <form action="./search.jsp" method="POST">
                 <label for="searchInput">Search</label>
-                <input class="u-full-width" type="text" placeholder="Fallout 4, The Sims 3 ..." name="searchInput" id="searchInput">
+                <input class="u-full-width" type="text" placeholder="Nike, Van ..." name="searchInput" id="searchInput">
                 <input class="button-primary" type="submit" value="Go!">
             </form>
             <hr />

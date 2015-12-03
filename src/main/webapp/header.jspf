@@ -13,8 +13,8 @@
     ArrayList<Party> parties = new ArrayList<Party>();
 
     Party nike = new Party("NIKE");
-    nike.addClaim("Battlefield 3");
-    nike.addClaim("Sims 2");
+    nike.addClaim("Men's Flex Experience");
+    nike.addClaim("Men's Son of Force");
 
     Party bethesda = new Party("Bethesda");
     bethesda.addClaim("Skyrim");
@@ -36,8 +36,8 @@
 
     ArrayList<Shoes> shoes = new ArrayList<Shoes>();
 
-    Shoes battlefield3 = new Shoes("Battlefield 3", nike, "battlefield.jpg");
-    Shoes sims2 = new Shoes("Sims 2", nike, "sims2.jpg");
+    Shoes nike1 = new Shoes("Men's Flex Experience", nike, "nike1.jpg");
+    Shoes nike2 = new Shoes("Men's Son of Force", nike, "nike2.jpg");
     Shoes fallout4 = new Shoes("Fallout 4", bethesda, "fallout4.jpg");
     Shoes skyrim = new Shoes("Skyrim", bethesda, "skyrim.jpg");
     Shoes darkforces = new Shoes("Dark Forces", lucasArts, "darkforces.jpg");
@@ -46,8 +46,8 @@
     Shoes portal2 = new Shoes("Portal 2", valve, "portal2.jpg");
     Shoes halflife2 = new Shoes("Half-Life 2", valve, "halflife2.jpg");
 
-    shoes.add(battlefield3);
-    shoes.add(sims2);
+    shoes.add(nike1);
+    shoes.add(nike2);
     shoes.add(fallout4);
     shoes.add(skyrim);
     shoes.add(darkforces);
