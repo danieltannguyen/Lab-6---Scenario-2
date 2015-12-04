@@ -32,7 +32,7 @@
                             </div>
                             <div class="nine columns">
                                 <h5><%= shoe.name %> ~ <strong>$10</strong></h5>
-                                <a class="button" href="./shoe.jsp?game=<%= shoe.name %>&publisher=<%= shoe.publishingParty.name %>">View</a>
+                                <a class="button" href="./shoe.jsp?shoe=<%= shoe.name %>&publisher=<%= shoe.publishingParty.name %>">View</a>
                             </div>
                         </div>
                         

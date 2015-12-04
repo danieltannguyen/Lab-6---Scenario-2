@@ -36,7 +36,7 @@
                         <div class="three columns">
                             <img height="100px" src="./images/covers/<%= shoe.cover %>" />
                             <h6><%= shoe.name %></h6>
-                            <a class="button" href="./game.jsp?game=<%= shoe.name %>&publisher=<%= shoe.publishingParty.name %>">View</a>
+                            <a class="button" href="./shoe.jsp?game=<%= shoe.name %>&publisher=<%= shoe.publishingParty.name %>">View</a>
                         </div>
                         <%
                     }
