@@ -15,7 +15,7 @@
     <body>
         <div class="container">
             <br />
-            <h1><a class="brand" href="./"><img src="./images/logo.png" /> Shoe Sale!</a></h1>
+            <h1><a class="brand" href="./"><img src="./images/logo.jpg" /> Shoe Sale!</a></h1>
             <p>Online Shoe Shopping Database.</p>
             
             <hr />
