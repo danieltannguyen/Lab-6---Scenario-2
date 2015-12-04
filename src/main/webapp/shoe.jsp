@@ -14,7 +14,7 @@
     <body>
         <div class="container">
             <br />
-            <h1><a class="brand" href="./"><img src="./images/logo.png" /> Shoe Sale!</a></h1>
+            <h1><a class="brand" href="./"><img src="./images/logo.jpg" /> Shoe Sale!</a></h1>
             <hr />
             <%
                 String shoeName = request.getParameter("shoe");
@@ -30,7 +30,7 @@
                                 <img width="100%" src="./images/covers/<%= shoe.cover %>" />
                             </div>
                             <div class="eight columns">
-                                <h4><%= shoe.name %> ~ <strong>$10</strong></h4>
+                                <h4><%= shoe.name %> ~ <strong>$59.99</strong></h4>
                                 <p><strong>Publisher: </strong><a href="./search.jsp?searchInput=<%= shoe.publishingParty.name %>"><%= shoe.publishingParty.name %></a></p>
                                 <p>Cool shoe with stuff.</p>
                             </div>
